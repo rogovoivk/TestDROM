@@ -17,8 +17,7 @@ class MainViewController: UIViewController {
                                                URL(string:"https://deswal.ru/cats/1600-1200/00000079.jpg"),
                                                URL(string:"https://sk-news.ru/upload/iblock/d0c/27.jpg"),
                                                URL(string:"https://webmg.ru/wp-content/uploads/2020/12/1-91-800x600.jpg"),
-                                               URL(string:"https://images.wallpaperscraft.ru/image/single/kot_koshka_pitomets_160374_800x600.jpg"),
-                                               URL(string: "https://www.bfoto.ru/foto/river/bfoto_ru_4763.jpg")]
+                                               URL(string:"https://images.wallpaperscraft.ru/image/single/kot_koshka_pitomets_160374_800x600.jpg")]
     
     var arrImagesForCV: [URL?]?
     
