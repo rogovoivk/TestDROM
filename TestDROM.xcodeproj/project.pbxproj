@@ -13,7 +13,6 @@
 		E6779A35288EC31100A5EE93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6779A33288EC31100A5EE93 /* Main.storyboard */; };
 		E6779A38288EC31100A5EE93 /* TestDROM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6779A36288EC31100A5EE93 /* TestDROM.xcdatamodeld */; };
 		E6779A3A288EC31300A5EE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6779A39288EC31300A5EE93 /* Assets.xcassets */; };
-		E6779A45288EC71100A5EE93 /* UINavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6779A44288EC71100A5EE93 /* UINavController.swift */; };
 		E6779A47288FC1CA00A5EE93 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6779A46288FC1CA00A5EE93 /* CustomCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		E6779A37288EC31100A5EE93 /* TestDROM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestDROM.xcdatamodel; sourceTree = "<group>"; };
 		E6779A39288EC31300A5EE93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6779A3E288EC31300A5EE93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6779A44288EC71100A5EE93 /* UINavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavController.swift; sourceTree = "<group>"; };
 		E6779A46288FC1CA00A5EE93 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 				E6779A2F288EC31100A5EE93 /* SceneDelegate.swift */,
 				E6779A31288EC31100A5EE93 /* MainViewController.swift */,
 				E6779A33288EC31100A5EE93 /* Main.storyboard */,
-				E6779A44288EC71100A5EE93 /* UINavController.swift */,
 				E6779A39288EC31300A5EE93 /* Assets.xcassets */,
 				E6779A3E288EC31300A5EE93 /* Info.plist */,
 				E6779A36288EC31100A5EE93 /* TestDROM.xcdatamodeld */,
@@ -146,7 +143,6 @@
 				E6779A32288EC31100A5EE93 /* MainViewController.swift in Sources */,
 				E6779A2E288EC31100A5EE93 /* AppDelegate.swift in Sources */,
 				E6779A47288FC1CA00A5EE93 /* CustomCollectionCell.swift in Sources */,
-				E6779A45288EC71100A5EE93 /* UINavController.swift in Sources */,
 				E6779A30288EC31100A5EE93 /* SceneDelegate.swift in Sources */,
 				E6779A38288EC31100A5EE93 /* TestDROM.xcdatamodeld in Sources */,
 			);

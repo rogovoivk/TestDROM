@@ -11,7 +11,6 @@ class MainViewController: UIViewController {
     
     
     var images: [UIImage] = []
-//    var arrAllImagesFromNetwork : [UIImage] = Array(repeating: UIImage(named: "dark-picture")!, count: 6)
     var arrAllImages : [URL?] = [URL(string:"https://krasivosti.pro/uploads/posts/2021-04/thumbs/1617876320_32-p-koshka-oboi-koshka-mila-54.jpg"),
                                                URL(string:"https://panda.kr.ua/wp-content/uploads/2022/02/chestvuem-kotikov-i-koshek-vseh-mastej-a-zaodno-teh-kto-nosit-koshachju-familiju-9e93a7b.jpg"),
                                                URL(string:"https://deswal.ru/cats/1600-1200/00000079.jpg"),
@@ -44,14 +43,10 @@ class MainViewController: UIViewController {
         print("start app")
         
         arrImagesForCV = arrAllImages
-        
-//        let fLayout = NoFadeFlowLayout()
-        
-//        images = [imageView, imageView, imageView, imageView, imageView, imageView]
+
         
         let layout = NoFadeFlowLayout()
         layout.scrollDirection = .vertical
-//        layout.itemSize = CGSize(width: view.frame.size.width/2, height: view.frame.size.width/2)
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView?.refreshControl = refrehControl
         
@@ -61,34 +56,19 @@ class MainViewController: UIViewController {
 
         
         collectionView.register(CustomCollectionCell.self, forCellWithReuseIdentifier: CustomCollectionCell.identifier)
-//        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.dataSource = self
         collectionView.delegate = self
         view.addSubview(collectionView)
         collectionView.frame = view.bounds
-//
-//        addSubview()
-//        layoutViews()
-        print("make func view did load!")
-        
-        
-        
+
         
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("make func view did apear")
-        
-    }
-    
 
     
     override func viewWillLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView?.collectionViewLayout.invalidateLayout()
         collectionView? .frame = view.bounds
-        print("make func will layout subview")
     }
 
 }
@@ -102,11 +82,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("make collection view items count: \(images.count)")
-        
-//        return images.count
         return arrImagesForCV!.count
-//        return 6
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -148,7 +124,6 @@ class NoFadeFlowLayout: UICollectionViewFlowLayout {
         let attributes = super.finalLayoutAttributesForDisappearingItem(at: itemIndexPath)
             attributes?.alpha = 1
         let endX = self.collectionView!.frame.width
-        let endY = self.collectionView!.frame.width/2
         let endTransform: CATransform3D = CATransform3DMakeTranslation(endX, 0, 0)
         attributes?.transform3D = endTransform
 
